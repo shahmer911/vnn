@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Valentine Letter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aldrich&family=Pixelify+Sans:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Envelope Screen -->
+    <div id="envelope-container">
+      <img src="envelope.png" alt="Envelope" id="envelope" />
+      <p>♡ Letter for You ♡</p>
+    </div>
+
+    <!-- Letter Screen -->
+    <div id="letter-container">
+      <!-- Page 1 -->
+      <div class="letter-window page" id="page-1">
+        <h1 id="letter-title">Will you be my Valentine?</h1>
+
+        <img src="cat_heart.gif" class="cat" id="letter-cat" />
+
+        <div class="buttons" id="letter-buttons">
+          <img src="yes.png" class="btn yes-btn" alt="Yes" />
+
+          <div class="no-wrapper">
+            <img src="no.png" class="btn no-btn" alt="No" />
+          </div>
+        </div>
+
+        <p id="final-text" class="final-text" style="display: none">
+          <strong>Valentine Date:</strong> From  TO 🎀
+        </p>
+      </div>
+
+      <!-- Page 2 -->
+      <div class="letter-window page" id="page-2" style="display: none">
+        <div class="poem-text">
+          <p>
+       Not so long ago we didn't know each other.<br>
+       We were just two souls walking without seeing each other.<br>
+       And then one day without any warning<br>
+       We found ourselves on the same path.<br>
+       And sometimes they say some encounters change everything<br>
+       and this is one of them.<br>
+       It's strange, I know.<br>
+       The more I get to know you,<br>
+       the more I forget how my life was without you.<br>
+       You make me better and for that I'm grateful.<br>
+       And if loving is a mistake, let the world condemn me and burn me till eternity.
+          </p>
+        </div>
+        <button class="next-page-btn">Next Page →</button>
+      </div>
+
+      <!-- Page 3 -->
+      <div class="letter-window page" id="page-3" style="display: none">
+        <button class="next-page-btn">Next Page →</button>
+      </div>
+
+      <!-- Page 4 -->
+      <div class="letter-window page" id="page-4" style="display: none">
+        <div class="valentine-message">Happy Valentines Day ❤️</div>
+        <img src="cat_heart.gif" class="cat-heart-page4" id="cat-heart-page4" />
+      </div>
+    </div>
+
+    <!-- Hearts Container -->
+    <div id="hearts-container"></div>
+
+    <!-- Background Music -->
+    <audio id="background-music" loop>
+      <source src="love_story.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+  </body>
+</html>
